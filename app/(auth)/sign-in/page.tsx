@@ -35,10 +35,13 @@ const SignIn = () => {
                 <InputField
                     name="email"
                     label="Email"
+                    type="email"
                     placeholder="sampletext@sample.com"
                     register={register}
                     error={errors.email}
-                    validation={{required: 'Email is required', pattern: /^\w+@\w+\.\w+$/, message: 'Email is required' }}
+                    validation={{
+                        required: 'Email is required', pattern: /^\w+@\w+\.\w+$/,
+                        message: 'Email is required' }}
                 />
 
                 <InputField
@@ -55,8 +58,7 @@ const SignIn = () => {
                     { isSubmitting ? 'Loading...' : 'Let me in' }
                 </Button>
 
-                <FooterLink text="New here?" linkText="Create an account" href="/sign-in" />
-
+                <FooterLink text="New here?" linkText="Create an account" href="/sign-up" />
 
             </form>
         </>
