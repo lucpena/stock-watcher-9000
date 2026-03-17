@@ -38,7 +38,7 @@ const SignIn = () => {
 
     return (
         <>
-            <h1 className="form-title">Welcome back 🚀</h1>
+            <p className="form-title">Welcome back 🚀</p>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <InputField

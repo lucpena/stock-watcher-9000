@@ -14,7 +14,7 @@ const Header = ({ user }: { user: User}) => {
                 </Link>
 
                 <nav className="hidden sm:block absolute sm:ml-64 underline underline-offset-3">
-                    <NavItems />
+                    <NavItems initialStocks={[]} />
                 </nav>
 
                 <UserDropdown user={user} />
