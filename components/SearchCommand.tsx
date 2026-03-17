@@ -81,8 +81,8 @@ export default function SearchCommand({ renderAs = 'button', label = 'Add stock'
                         {loading ? (
                             <CommandEmpty className="bg-gray-700">Loading stocks...</CommandEmpty>
                         ) : displayStocks?.length === 0 ? (
-                            <div className="search-list-indicator bg-gray-700">
-                                {isSearchMode ? 'No results found' : 'No stocks available'}
+                            <div className="search-list-indicator bg-gray-700 text-gray-50">
+                                {isSearchMode ? 'No results found' : 'Find the stock you are looking for...'}
                             </div>
                         ) : (
                             <ul>
